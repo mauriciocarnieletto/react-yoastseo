@@ -6,17 +6,17 @@ module.exports = {
     `/node_modules/(?!${esModules})/`,
   ],
   roots: [
-    "<rootDir>/jest/unit",
+    "<rootDir>/test/unit",
   ],
   moduleNameMapper: {
     "@/(.*)$": "<rootDir>/src/$1",
   },
   setupFiles: [
-    "<rootDir>/jest/support/index.ts",
+    "<rootDir>/test/support/index.ts",
   ],
   globals: {
     "ts-jest": {
-      tsconfig: "<rootDir>/jest/tsconfig.json",
+      tsconfig: "<rootDir>/test/tsconfig.json",
     },
   },
 };
