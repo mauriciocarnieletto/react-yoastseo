@@ -1,0 +1,7 @@
+{
+  "fixturesFolder": false,
+  "supportFile": false,
+  "video": false,
+  "screenshotOnRunFailure": false,
+  "integrationFolder": "test/e2e"
+}

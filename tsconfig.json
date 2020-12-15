@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+  },
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}

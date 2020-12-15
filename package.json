@@ -1,0 +1,91 @@
+{
+  "name": "react-yoastseo",
+  "version": "0.0.0",
+  "description": "Helpers to use Yoast SEO with React",
+  "main": "dist/react-yoastseo.umd.js",
+  "types": "dist/types/index.d.ts",
+  "module": "dist/react-yoastseo.esm.js",
+  "jsdelivr": "dist/react-yoastseo.iife.js",
+  "unpkg": "dist/react-yoastseo.iife.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lmarqs/react-yoastseo.git"
+  },
+  "files": [
+    "dist/**/*",
+    "src/**/*"
+  ],
+  "homepage": "https://lmarqs.github.io/react-yoastseo",
+  "author": {
+    "name": "Lucas Marques de Paula<marques.analista@gmail.com>",
+    "url": "https://github.com/lmarqs"
+  },
+  "bugs": "https://github.com/lmarqs/react-yoastseo/issues",
+  "keywords": [
+    "react",
+    "yoast",
+    "seo",
+    "yoastseo"
+  ],
+  "scripts": {
+    "prebuild": "shx rm -rf dist",
+    "build": "npm-run-all build:*",
+    "build:types": "tsc --project tsconfig-types.json",
+    "build:main": "rollup --config rollup.config.js",
+    "coverage": "nyc report --reporter=text-lcov > coverage/lcov.info",
+    "lint": "npm-run-all lint:*",
+    "lint:commit": "commitlint --from master",
+    "lint:js": "eslint --ext .js,.jsx,.json,.ts,.tsx .",
+    "lint:markdown": "markdownlint '**/*.md' --ignore '**/node_modules/**/*' --ignore CHANGELOG.md",
+    "lint:yaml": "yamllint '**/*.{yaml,yml}' --ignore='**/node_modules/**/*'",
+    "release": "npx semantic-release",
+    "test": "npm-run-all test:*",
+    "test:cypress": "cypress run",
+    "test:jest": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.1",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.7",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "@testing-library/react-hooks": "^3.7.0",
+    "@types/node": "^14.14.13",
+    "@types/react": "^17.0.0",
+    "@types/yoastseo": "file:@types/yoastseo",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.9.1",
+    "babel-jest": "^26.6.3",
+    "cypress-rollup-preprocessor": "^0.6.2",
+    "eslint": "^7.7.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-json-format": "^2.0.1",
+    "jest": "^26.6.3",
+    "jest-cucumber": "^3.0.0",
+    "markdownlint-cli": "^0.25.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.1",
+    "react-test-renderer": "^17.0.1",
+    "rollup": "^2.26.3",
+    "rollup-plugin-typescript2": "^0.29.0",
+    "semantic-release": "^17.1.1",
+    "serve": "^11.3.2",
+    "shx": "^0.3.2",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.3",
+    "yaml-lint": "^1.2.4",
+    "yoastseo": "^1.86.0"
+  },
+  "peerDependencies": {
+    "react": "^17.x",
+    "yoastseo": "^1.x"
+  }
+}
