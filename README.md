@@ -10,6 +10,8 @@
 
 ## Installation
 
+[![NPM](https://nodei.co/npm/react-yoastseo.png)](https://nodei.co/npm/react-yoastseo/)
+
 First install [node.js](http://nodejs.org/). Then:
 
 ```sh
