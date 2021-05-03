@@ -54,7 +54,7 @@
     "@semantic-release/github": "^7.0.7",
     "@semantic-release/release-notes-generator": "^9.0.1",
     "@testing-library/react-hooks": "^3.7.0",
-    "@types/node": "^14.14.13",
+    "@types/node": "^15.0.1",
     "@types/react": "^17.0.0",
     "@types/yoastseo": "file:@types/yoastseo",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
