@@ -22,7 +22,6 @@ module.exports = {
     "indent": ["error", 2],
     "quotes": ["error", "double"],
     "semi": ["error", "always"],
-    "comma-dangle": ["error", "always-multiline"],
     "eol-last": ["error", "always"],
     "no-trailing-spaces": ["error"],
     "unicode-bom": ["error", "never"],
